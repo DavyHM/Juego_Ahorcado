@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Segundo Sprint</title>
+</head>
+<body>
+    <header>
+        <img  class="logo" src="imagenes/logo.svg">
+        <h1>Juego del Ahorcado</h1>
+    </header>
+
+    <main>
+        <div id="botones-inicio" class="botones-inicio">
+            <button class="btn-jugar" onclick="iniciarJuego()">Jugar</button>
+            <button class="btn-agregar" onclick="mostrarpantallaagregar()">Agregar Palabra</button>
+        </div>
+
+        <div id="agregar-palabra" class="agregar-palabra">
+            <input id="texto-agregado" class="texto-agregado" type="text" maxlength="8" placeholder="Escriba aquí">
+            <div class="alerta">
+                <img src="imagenes/!.png">
+                <label for="texto-agregado">Máximo 8 caracteres</label>
+            </div>
+            <div class="botones-palabra">
+                <button class="agg-empieza" onclick="guardarPalabra()">Agregar y empezar</button>
+                <button class="cancelar" onclick="location.reload()">Cancelar</button>
+            </div>
+        </div>
+
+        <div id="jugando" class="canva">
+            <canvas id="horca" height="800" width="1080"></canvas>
+            <div class="botones-juego">
+                <button class="nuevo-juego" onclick="location.reload()">Nuevo Juego</button>
+                <button class="rendirse" onclick="location.reload()">Rendirse</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h4>Desarrollado por Davy</h4>
+    </footer>
+    <script src="script.js"></script>
+    <script src="dibuja.js"></script>
+</body>
+</html>

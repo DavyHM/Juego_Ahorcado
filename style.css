@@ -1,0 +1,123 @@
+body{
+    background-color: cadetblue;
+}
+
+header {
+    position: relative;
+    align-items: flex-end;
+}
+
+.logo{
+    position: absolute;
+    float: left;
+    left: 10px;
+}
+h1{
+text-align: center;
+font-size: 45px;
+}
+
+main{
+    height: 960px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+h4{
+    text-align: center;
+}
+
+.botones-inicio {
+    position: absolute;
+    gap: 20px;
+    bottom: 50px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.btn-jugar {
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 15px;
+    font-weight: bold;
+    border-style: none;
+    background-color: skyblue;
+    transition: 1s;
+}
+
+.btn-jugar:hover{
+    font-size: 35px;
+    color: orangered;
+    background-color: blue;
+}
+
+.btn-agregar {
+    border-radius: 15px;
+    width: 250px;
+    height: 48px;
+    font-size: 20px;
+    margin: auto;
+    border-style: none;
+    transition: 1s;
+}
+
+.btn-agregar:hover{
+    font-size: 22px;
+    background: rgba(103, 171, 207, 0.907);
+    color: brown;
+}
+
+.agregar-palabra{
+    width: 1080px;
+    position: relative;
+}
+
+.botones-palabra{
+    position: absolute;
+    top: 300px;
+}
+
+.agg-empieza, .cancelar, .nuevo-juego, .rendirse{
+    position: relative;
+    width: 220px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.nuevo-juego:hover ,.agg-empieza:hover{
+    font-size: 22px;
+    color: lightgreen;
+}
+
+.cancelar:hover, .rendirse:hover {
+    font-size: 22px;
+    color: red;
+}
+
+.agg-empieza, .nuevo-juego{
+    font-weight: bold;
+    background-color: blueviolet;
+    color: pink;
+}
+
+.alerta {
+    position: absolute;
+    top: 120px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.texto-agregado{
+    position: relative;
+    top: 50px;
+    font-size: 30px;
+    width: 10em;
+    border-radius: 15px;
+    text-align: center;
+    border-style: dotted;
+}
+
